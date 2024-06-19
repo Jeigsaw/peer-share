@@ -1,0 +1,158 @@
+:root {
+  font-family: 'Quicksand', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+  color: #111;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  --primary: #f59d62;
+  --primary-focus: #ffb17d;
+  --on-primary: #ffe9da;
+  --primary-dark: #f08944;
+  --secondary: #eeded4;
+  --secondary-focus: #f5e3d7;
+  --bg-overlay: #ffe9dcea;
+  --success: #008000;
+  --error: #ff5252;
+  --info: #007f79;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+*::selection{
+  background-color: #eacab3;
+  color: #111;
+}
+
+#app {
+  display: flex;
+  place-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-dark);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--primary);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100svh;
+  background-color: #ffe3cf;
+}
+p, h1, h2, h3, h4,h5{
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.id{
+  font-family: 'Recursive Variable', monospace;
+  font-variation-settings: "MONO" 0.5, "CASL" 1;
+  font-weight: 600;
+}
+
+input{
+  background-color: #ffdfc982;
+  border: 1px solid #f3c3a3;
+  color: #111;
+  font-size: 1rem;
+  font-family: 'Quicksand', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 550;
+}
+input:focus{
+  border-color: var(--primary);
+  background-color: #ffdfc940;
+  outline: none;
+}
+
+textarea{
+  resize: none;
+  padding: 0.5rem;
+  background-color: #fff2e8c7;
+  border: none;
+  border-radius: 3px;
+  color: #111;
+}
+
+textarea:focus{
+  outline: 1px solid var(--primary);
+}
+
+button {
+  font-family: 'Quicksand', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 450;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 1px solid #734526;
+}
+
+button.primary{
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+button.primary:hover{
+  background-color: var(--primary-focus);
+  transition: background-color 0.2s ease-out;
+}
+
+button.secondary{
+  color: #111;
+  background-color: var(--secondary);
+}
+button.secondary:hover{
+  background-color: var(--secondary-focus);
+  transition: background-color 0.2s ease-out;
+}
+
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(141, 133, 124);
+}
+
+.dark-theme *::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(66, 66, 66);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+

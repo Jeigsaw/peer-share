@@ -1,0 +1,24 @@
+{
+  "name": "peer-share",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "author": "jeigsaw",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "host": "vite --host"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "svelte": "^4.2.12",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/recursive": "^5.0.18",
+    "d3": "^7.9.0",
+    "file-saver": "^2.0.5",
+    "peerjs": "^1.5.4"
+  }
+}
