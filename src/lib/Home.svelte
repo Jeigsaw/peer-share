@@ -49,7 +49,6 @@ async function onStart(){
     <article>
       <h3>Peer-Peer Share</h3>
       <p>Peer-Share is a platform for sharing files and clipboard text to peers connected to your local network. 
-        <!-- More information <a href="https://jeigsaw.github.io" target="_blank">here.</a> -->
       </p>
 
       {#if !isStarted && !$localId}
@@ -68,7 +67,7 @@ async function onStart(){
       <hr>
         <section>
           <h4>Your Peer ID: <span class="id">{$localId}</span></h4>
-          <p>Share this Id with your peers to connect.</p>
+          <p>Share this ID with your peers to connect.</p>
           <p style="margin-top: 1rem;">Connect to peer with the their ID</p>
           <label for="peer-id">
             Peer ID
@@ -99,7 +98,7 @@ async function onStart(){
           </svg>
         Jeigsaw
       </a> 2024. 
-      <a target="_blank" href="https://www.buymeacoffee.com/jeigsaw">Buy me a time!</a> to support.</p>
+      <a target="_blank" href="https://www.buymeacoffee.com/jeigsaw">Support me here!</a></p>
   </div>
 
 </section>
